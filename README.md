@@ -539,7 +539,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 <br/>
 
-Made with 💚 by [Asmit Pandey](https://github.com/Asmitpandey112)
+Made with 💚 by [Asmit kumar](https://github.com/Asmitpandey112)
 
 <br/>
 
