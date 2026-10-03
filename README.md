@@ -48,6 +48,7 @@
 - [🐳 Docker Deployment](#-docker-deployment)
 - [📡 API Reference](#-api-reference)
 - [📂 Project Structure](#-project-structure)
+- [🌍 Impact Measurement](#-impact-measurement)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing)
 
@@ -439,6 +440,64 @@ Crop-Drop-Smart-Irrigation/
         └── data/
             └── mockData.js         # Fallback mock data
 ```
+
+---
+
+## 🌍 Impact Measurement
+
+> 📄 **Full report:** [`IMPACT_MEASUREMENT.md`](IMPACT_MEASUREMENT.md)
+
+CropDrop aligns with **UN SDG 6 (Clean Water)** and **SDG 2 (Zero Hunger)**. Here are the key projected impact numbers:
+
+<div align="center">
+
+| Metric | Per Field / Week | Per Farm / Year (5 fields) |
+|:------:|:---------------:|:--------------------------:|
+| 💧 **Water Saved** | ~2,000 L | **520,000 L** |
+| 💰 **Cost Saved** (India) | — | **₹2,600 – ₹7,800** |
+| 🌍 **CO₂ Avoided** | — | **~95 kg** |
+| ⏱️ **Farmer Time Saved** | ~14 hrs | **~730 hrs** |
+
+</div>
+
+### Scalability
+
+| Scale | Fields | Annual Water Saved | Equivalent |
+|-------|:------:|:-----------------:|:----------:|
+| 1 Farm | 5 | 520,000 L | 1 family's water for 208 days |
+| 50 Farms (Village) | 250 | 26 million L | Fills 10 Olympic pools |
+| 500 Farms (District) | 2,500 | 260 million L | **104 Olympic pools** |
+
+### How We Measure
+
+```
+┌──────────────────┐        ┌──────────────────┐
+│ Traditional Mode │        │  CropDrop Mode   │
+│ (Fixed Schedule) │        │ (Rule Engine)    │
+│                  │        │                  │
+│ Irrigate every   │        │ Only irrigate    │
+│ 2 days: 500 L    │   vs   │ when needed:     │
+│                  │        │ 0 – 562 L        │
+└────────┬─────────┘        └────────┬─────────┘
+         │                           │
+         └───────────┬───────────────┘
+                     ▼
+         ┌───────────────────────┐
+         │  Δ = Water Avoided   │
+         │  Logged per decision │
+         └───────────────────────┘
+```
+
+### UN SDG Alignment
+
+| SDG | Contribution |
+|:---:|-------------|
+| **SDG 2** Zero Hunger | Optimizes crop water for better yields |
+| **SDG 6** Clean Water | Reduces agricultural water waste by 40–60% |
+| **SDG 12** Responsible Consumption | Data-driven resource allocation |
+| **SDG 13** Climate Action | Reduces pump energy & CO₂ emissions |
+
+> ⚠️ All metrics are projected estimates from prototype simulation data. Real-world validation is planned.
 
 ---
 
